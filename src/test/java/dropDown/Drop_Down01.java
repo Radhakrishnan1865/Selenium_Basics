@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -35,9 +34,11 @@ public class Drop_Down01 {
 				.withTimeout(Duration.ofSeconds(10))
 				.pollingEvery(Duration.ofSeconds(5))
 				.ignoring(ElementClickInterceptedException.class);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		
 		//WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 	//	wait.until(ExpectedConditions.elementToBeClickable(element));
+		
 		// drop down 01
 
 	driver.findElement(By.xpath("//*[text()='Group 1, option 1']")).click();
