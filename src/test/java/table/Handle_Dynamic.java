@@ -27,7 +27,7 @@ public class Handle_Dynamic {
 		List<WebElement> headers = table.findElements(By.xpath(".//thead/tr/th")); // Assuming headers are in <thead>
 
         // Find the index of the "Name" column dynamically
-        int nameColumnIndex = -1;
+        int nameColumnIndex = 0;
         for (int i = 0; i < headers.size(); i++) {
             if (headers.get(i).getText().equalsIgnoreCase("Name")) {
                 nameColumnIndex = i + 1; // Index in XPath is 1-based
@@ -35,7 +35,7 @@ public class Handle_Dynamic {
             }
         }
 
-        if (nameColumnIndex == -1) {
+        if (nameColumnIndex == 0) {
             System.out.println("Name column not found!");
             return;
         }

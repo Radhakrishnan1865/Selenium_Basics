@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-17T17:30:31 IST" name="Default suite" finished-at="2024-11-17T17:30:31 IST" duration-ms="99">
+  <suite started-at="2024-11-19T13:26:54 IST" name="Default suite" finished-at="2024-11-19T13:26:54 IST" duration-ms="104">
     <groups>
     </groups>
-    <test started-at="2024-11-17T17:30:31 IST" name="Default test" finished-at="2024-11-17T17:30:31 IST" duration-ms="99">
-      <class name="testNG_Practices.Child_Class">
-        <test-method signature="method()[pri:0, instance:testNG_Practices.Child_Class@323b36e0]" started-at="2024-11-17T17:30:31 IST" name="method" finished-at="2024-11-17T17:30:31 IST" duration-ms="25" status="PASS">
+    <test started-at="2024-11-19T13:26:54 IST" name="Default test" finished-at="2024-11-19T13:26:54 IST" duration-ms="104">
+      <class name="testNG_Practices.Login_Scenario">
+        <test-method is-config="true" signature="SignUp()[pri:0, instance:testNG_Practices.Login_Scenario@564fabc8]" started-at="2024-11-19T13:26:54 IST" name="SignUp" finished-at="2024-11-19T13:26:54 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method -->
-      </class> <!-- testNG_Practices.Child_Class -->
+        </test-method> <!-- SignUp -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:testNG_Practices.Login_Scenario@564fabc8]" started-at="2024-11-19T13:26:54 IST" name="Login" finished-at="2024-11-19T13:26:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Resource()[pri:1, instance:testNG_Practices.Login_Scenario@564fabc8]" started-at="2024-11-19T13:26:54 IST" name="Resource" finished-at="2024-11-19T13:26:54 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Resource -->
+        <test-method signature="Update_Resource()[pri:2, instance:testNG_Practices.Login_Scenario@564fabc8]" started-at="2024-11-19T13:26:54 IST" name="Update_Resource" finished-at="2024-11-19T13:26:54 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Update_Resource -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:testNG_Practices.Login_Scenario@564fabc8]" started-at="2024-11-19T13:26:54 IST" name="Logout" finished-at="2024-11-19T13:26:54 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- testNG_Practices.Login_Scenario -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
